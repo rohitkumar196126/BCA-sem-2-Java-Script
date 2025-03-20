@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window object </title>
+</head>
+<body>
+    <input type="button" name="hello" value="hello" onmouseenter="abc1()">
+    <input type="button" name="cmdx" value="open" onmouseenter="abc2()">
+    <input type="button" name="on exit" value="close" onmouseenter="abc3()">
+    <script>
+        function abc1() {
+            window.status();
+        }
+        function abc2(){
+            window.open("page.html");
+        }
+        function abc3()
+           {
+            window.close();
+           }
+
+        
+    </script>
+</body>
+</html>

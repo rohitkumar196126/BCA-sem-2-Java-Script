@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display:contents;
+        }
+        .dropdown button{
+           background-color: green;
+           border-color: green;
+           border-radius: 5px green ;
+           color: white;
+           padding: 14px 20px;
+           font-size: 16px;
+           border: none;
+           cursor: pointer;
+           text-transform: uppercase;
+
+        }
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px black;
+            z-index: 1;
+        }
+        .dropdown-menu a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display:flex;
+        }
+        .dropdown-menu a:hover{
+            background-color: rgb(16, 125, 221);
+            transition: all 0.5s;
+
+        }
+        .dropdown:hover .dropdown-menu{
+            display:flex;
+        }
+        .dropdown:hover .dropdown button{
+            background-color: green;
+        }
+        button:hover{
+            background-color: rgb(16, 125, 221);
+            transition: all 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Dropdown Menu</button>
+        <div class="dropdown-menu">
+            <a href="#">JavaScript</a>
+            <a href="#">Pythan</a>
+            <a href="#">Java</a>
+        </div>
+    </div>
+</body>
+</html>

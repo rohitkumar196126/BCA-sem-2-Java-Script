@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* basic reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(32, 216, 15, 0.74);
+    color: rgb(253, 249, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.main_box{
+    /* border: 2px solid blueviolet; */
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50);
+    margin: 10px 0;
+    padding: 10px ;
+    width: 100%;
+    max-width: 800px;
+    height: 900px;
+    border: 2px solid black;
+    /* border: 2px solid black; */
+    /* max-width: 400px; */
+    /* max-height: 800px; */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(96, 148, 216);
+    /* max-width: 400px; */
+    box-shadow: 10px 15px 10px  black;
+    box-shadow: -10px -10px -10px black;
+
+}
+.second_box{
+        
+        position:absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        height: 100%;
+        max-width: 800px;
+        max-height: 100%;
+    }
+.input_button{
+    margin: 10px 0;
+    padding: 10px ;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+.input_button:hover{
+    background-color: rgb(208, 212, 212);
+}
+.submit , .reset{
+    width: 100%;
+    max-width: 800px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    box-shadow: -2px 5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+.submit:hover{
+    background-color: rgba(14, 236, 14, 0.445);
+    transition: all 1.5ms;
+    color: white;
+}
+.reset:hover{
+   background-color: rgba(226, 25, 25, 0.884);
+   transition: 1.5ms;
+   color: white;
+}
+.head_page{
+    /* position:block; */
+    border: 2px solid ;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(96, 148, 216);
+    width: 100%;
+    height: 100%;
+
+}
+.page{
+    text-shadow: 2px 2px 2px;
+    color: honeydew;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+    /* margin-bottom: 20px; */
+    
+}
+  #lable{
+    font-size: 30px;
+    font-family: a;
+    text-shadow: 2px 5px 2px black ;
+  }#dark_mood{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 92%;
+    max-width: 800px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    box-shadow: -2px 5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+
+  }
+  #light_mood{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 92%;
+    max-width: 800px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    box-shadow: -2px 5px 10px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  #light_mood:hover{
+    background-color: white;
+    transition: all 1.5ms;
+    
+  }
+  #dark_mood:hover{
+    background-color: black;
+    transition: all 1.5ms;
+    color: rgb(255, 244, 244);
+    /* text-shadow: 2px 5px 2px rgb(255, 244, 244); */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+       body{
+        background-color: rgba(68, 202, 15, 0.774);
+        color: rgba(5, 172, 250, 0.925);
+       } 
+       
+       .main_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+            width: 110vh;
+            height: 65vh;
+           
+            padding: 15px;
+           
+        }
+        
+        
+        .reset{
+            position:relative;
+            top: 80%;
+            left: 82%;
+            transform: translate(-50%,-50%);
+            width: 40vh;
+            height: 8vh;
+            background-color: rgba(9, 122, 214, 0.61);
+            border: none;
+            border-radius: 5px;
+            color: rgb(9, 10, 10);
+            text-transform: capitalize;
+            box-shadow: 4px 10px 7px rgb(80, 78, 78);
+            cursor: pointer;
+        }
+        
+        
+        .reset:hover{
+            background-color: rgba(226, 110, 15, 0.849);
+            color: rgb(253, 253, 253);
+            transition: all 1.5s;
+        }
+        
+        
+        .submit{
+            position:relative;
+            top: 90%;
+            left: 27%;
+            transform: translate(-50%,-50%);
+            width: 40vh;
+            height: 8vh;
+            background-color: rgba(9, 122, 214, 0.61);
+            border: none;
+            border-radius: 5px;
+            color: rgb(9, 10, 10);
+            text-transform: capitalize;
+            box-shadow: 4px 10px 7px rgb(80, 78, 78);
+            cursor: pointer;
+        }
+        
+        .submit:hover{
+            background-color: rgba(37, 190, 32, 0.849);
+            color: rgb(253, 253, 253);
+            transition: all 1.5s;
+        }
+        
+        
+        .input_button{
+            margin: 5px ;
+            padding: 5px;
+            border: 1px solid;
+        border-radius: 5px ;
+        width: 100%;
+        position: relative;
+
+        }
+        
+        .second_box{
+        
+            position:relative;
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 80vh;
+            height: 60vh;
+        }
+        
+        
+        .page{
+            text-shadow: 2px 2px 20px ;
+            color: rgba(10, 189, 243, 0.664);
+            text-transform: capitalize;
+
+        }
+        
+        .head_page{
+            border: 2px solid ;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 254, 255, 0.685);
+        } */
+    </style>
+    <script>
+        function data(){
+        var n1=document.getElementById("a").value;
+        var n2=document.getElementById("b").value;
+        var n3=document.getElementById("c").value;
+        var n4=document.getElementById("d").value;
+        var n5=document.getElementById("e").value;
+        
+        if( n1=="" || n1=="" || n3=="" || n4=="" || n5==""  ){
+
+            alert("All Fileds  are mendatory");
+            return false;
+        }else if(n3.length<10 || n3.length>10){
+            alert("Number shoud be of 10 Digits ! Please Enter Valide NUmber !");
+            return false;
+        }else if(isNaN(n3)){
+         alert("Only Number are Allowed !");
+         return false;
+        }else if(n4!=n5){
+            alert("Please Enter Same Password !");
+            return false;
+        }else{
+            true;
+        }
+
+        }
+        function dark(){
+         document.getElementById("dark_mood");
+         document.body.style.background='black';
+        }
+        function light(){
+            document.getElementById("light_mood");
+            document.body.style.background='white'
+        }
+    </script>
+</head>
+<body>
+   <div class="main_box">
+       <div class="second_box">
+           <button id="light_mood" onclick="light()">light mood</button>
+           <button id="dark_mood" onclick="dark()">dark mood</button>
+           <fieldset class="head_page">
+               <legend class="page">Login Page  </legend>
+               <form onsubmit="return data()" action="thank yoypage.html">
+                   <label for="" id="lable">Name</label>
+                   <input class="input_button" type="name" id="a" placeholder="Enter User Name "><br>
+                   <label for="" id="lable"> Email</label>
+                   <input class="input_button" type="email" id="b"placeholder="Enter Your Email"><br>
+                   <label for="" id="lable">Phone</label>
+                   <input class="input_button" type="number" id="c" placeholder="Enter Phone Number "><br>
+                   <label for="" id="lable">Pword</label>
+                   <input class="input_button" type="password" id="d" placeholder="Enter A  strong Password"><br>
+                   <label for="" id="lable">Verify</label>
+                   <input class="input_button" type="password" id="e" placeholder="Confirm Your Password"><br><br>
+                   <input class="submit" type="submit" value="submit your data ">
+                   <input class="reset" type="reset" value="reset your data ">
+          </form>
+      </fieldset>
+        
+    </div>
+   </div>
+</body>
+</html>

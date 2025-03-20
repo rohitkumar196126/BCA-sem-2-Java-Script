@@ -1,0 +1,44 @@
+<!-- Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not. -->
+<!DOCTYPE html 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./primenumber.js" -->
+</head>
+<body>
+    <!-- <script>
+        var a=prompt("Enter Your Number ");
+        if(a%a==0 || a%a!=0){
+           document.write("Nubmer is Prime :");
+        } 
+        else{
+            document.write("Number is Not Prime :"); 
+        }
+    </script> -->
+    <script>
+    function isPrime(num) {
+        if (num <= 1) {
+            return false; // 0 and 1 are not prime numbers
+        }
+    
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false; // If num is divisible by i, it's not prime
+            }
+        }
+    
+        return true; // num is prime
+    }
+    
+    // Example usage:
+    let number=prompt("Enter Your number"); // You can change this number to test other numbers
+    if (isPrime(number)) {
+        console.log(`${number} is a prime number.`);
+    } else {
+        console.log(`${number} is not a prime number.`);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCUMENT html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function prime(num) {
+                if(num<=1){
+                    return false;
+                }
+                for (let i =2; i <=Math.sqrt(num); i++) {
+                    if(num % i == 0){
+                        return false;
+                    }
+                }
+                return true;
+            }
+            let number =prompt("Enter Any Number Check for Prime No'");
+            if(prime(number)){
+                console.log(`${number} is s prime number`);
+            }else{
+
+                console.log(`${number}is not a prime number `);
+            }
+        </script>
+    </body>
+</html>

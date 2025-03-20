@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 36;  // Example number
+let factors = [];
+
+for (let i = 1; i <= num; i++) {
+    if (num % i === 0) {
+        factors.push(i);
+    }
+}
+
+document.write(factors);  // Output: [1, 2, 3, 4, 6, 9, 12, 18, 36]
+
+    </script>
+</body>
+</html>

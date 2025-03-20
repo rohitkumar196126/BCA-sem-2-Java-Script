@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function swap(str) 
+        {
+
+            if (str.length > 2) 
+            {
+                let f = str[0];
+                let l = str[str.length - 1];
+                let m = str.substring(1, str.length - 1);
+                return l + m + f;
+            } 
+            else 
+            {
+                return "String length must be greater than 2.";
+            }
+        }
+
+        let result = swap(prompt("enter a string"));
+        console.log(result);
+
+    </script>
+</body>
+</html>
